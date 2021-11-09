@@ -1,3 +1,13 @@
 .titleCentered {
   text-align: center;
 }
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-single {
+  align-items: baseline;
+
+}

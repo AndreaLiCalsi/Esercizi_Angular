@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  gap: 3vw;
+  gap: 1vw;
 }
 
 .userContainer {
@@ -11,3 +11,4 @@
   flex-grow: 1;
   height: 90vh;
 }
+
