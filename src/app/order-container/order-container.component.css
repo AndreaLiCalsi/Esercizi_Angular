@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  gap: 3vw;
+}
+
+.orderContainer {
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid salmon;
+  width: 100%;
+  flex-grow: 1;
+  height: 90vh;
+}
