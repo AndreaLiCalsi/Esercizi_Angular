@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  gap: 1vw;
+}
+
+.userContainer {
+  background-color: lightskyblue;
+  padding: 10px;
+  border: 1px solid blue;
+  width: 100%;
+  flex-grow: 1;
+  height: 90vh;
+}
+

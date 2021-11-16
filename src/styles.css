@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.titleCentered {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-single {
+  align-items: baseline;
+
+}
