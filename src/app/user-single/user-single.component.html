@@ -1,0 +1,11 @@
+<div class="d-flex user-single" [ngStyle]="{'border-color': user.role === 'staff' ? 'red' : user.role === 'manager' ? 'blue' : user.role === 'admin' ? 'purple' : 'black'}">
+  <p> {{index + 1}} </p>
+  <img class="image" [src]="user.profilePhotoUrl">
+  <h3> {{user.name}} </h3>
+  <h3> {{user.surname}} </h3>
+  <p> {{user.age}} </p>
+  <p> {{user.address.city}} </p>
+  <button (click)="removeUser.emit(user)">Remove</button>
+</div>
+
+
