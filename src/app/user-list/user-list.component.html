@@ -1,0 +1,7 @@
+<div class="user-list">
+  <p class="titleCentered">user-list.component</p>
+  <div *ngFor="let user of users; index as i">
+    <app-user-single [user]="user" [index]="i" (removeUser)="delete($event)"></app-user-single>
+  </div>
+</div>
+
