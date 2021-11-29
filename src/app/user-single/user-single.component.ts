@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-import { Users } from '../models/Users';
+import { IUser } from '../models/Users';
 
 @Component({
   selector: 'app-user-single',
@@ -9,11 +9,11 @@ import { Users } from '../models/Users';
 })
 export class UserSingleComponent implements OnInit {
 
-  @Input() user!: Users;
+  @Input() user!: IUser;
   @Input() index!: number;
-  @Output() removeUser = new EventEmitter<Users>()
+  @Output() removeUser = new EventEmitter<IUser>()
 
-  deleteUser(user:Users) {
+  deleteUser(user:IUser) {
     this.removeUser.emit(user)
   }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Gender, Role, Users } from '../models/Users';
+import { Gender, Role, IUser } from '../models/Users';
 
 @Component({
   selector: 'app-user-list',
@@ -8,7 +8,7 @@ import { Gender, Role, Users } from '../models/Users';
 })
 export class UserListComponent implements OnInit {
 
-  users: Users[] =
+  users: IUser[] =
   [
     {
         id: 3487,
@@ -60,7 +60,7 @@ export class UserListComponent implements OnInit {
       }
   ];
 
-  delete(user:Users) {
+  delete(user:IUser) {
     const index = this.users.indexOf(user);
     this.users.splice(index, 1)
   }
