@@ -1,7 +1,14 @@
 <div class="user-list">
+ esercizio3
+  <p class="titleCentered">user-list.component</p>
+  <ul *ngFor= "let user of users; index as i">
+    <li> {{ i + 1 }}. <img id="image" [src]="user.profilePhotoUrl"> {{user.name}} {{user.surname}} {{user.age}} {{user.address.city}} </li>
+  </ul>
+
   <h3 class="titleCentered">user-list.component</h3>
   <app-user-single></app-user-single>
   <app-user-single></app-user-single>
   <app-user-single></app-user-single>
+main
 </div>
 
